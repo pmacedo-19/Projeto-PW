@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-business-card',
@@ -7,10 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BusinessCardComponent {
 
-  Business: any = {
-    "Id":1,
-    "Name":"Restaurant 1",
-    "Type":"Restaurant"
-  }
+  @Input() business : any
 
 }

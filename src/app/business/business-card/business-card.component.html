@@ -1,11 +1,20 @@
-<div class="row">
-    <div class="shadow-lg col-sm-4">
-        <div class="card">
-        <img class="propImg" src="assets/img/RestaurantDefault.png">
-        <div class="card-body p-2">
-          <h1>{{Business.Name}}</h1>
-          <h2>{{Business.Type}}</h2>
-        </div>
-      </div>
-    </div>
+
+<div class="card">
+  <div class="card-img-wrapper">
+    <img class="card-img-top" src="assets/img/RestaurantDefault.png">
+    <ul class="list-inline-item text-center member-icons animate">
+      <li class="list-inline-item">
+        <button class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i></button>
+      </li>
+      <li class="list-inline-item">
+        <button class="btn btn-primary"><i class="fa-solid fa-address-book"></i></button>
+      </li>
+    </ul>
+  </div>
+  <div class="card-body p-2">
+    <h1>{{business.Name}}</h1>
+    <h2>{{business.Type}}</h2>
+  </div>
+
 </div>
+

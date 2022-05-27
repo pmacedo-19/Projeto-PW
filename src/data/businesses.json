@@ -1,0 +1,23 @@
+[
+  {
+    "Id":1,
+    "Name":"Restaurant 1",
+    "Type":"Restaurant"
+  },
+  {
+    "Id":2,
+    "Name":"Restaurant 2",
+    "Type":"Restaurant"
+  },
+  {
+    "Id":3,
+    "Name":"Restaurant 3",
+    "Type":"Restaurant"
+  },
+  {
+    "Id":4,
+    "Name":"Restaurant 4",
+    "Type":"Restaurant"
+  }
+
+]

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { error } from 'console';
+import { BusinessService } from 'src/app/services/business.service';
+import { IBusiness } from '../IBusiness.interface';
 
 @Component({
   selector: 'app-business-list',
@@ -7,9 +10,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BusinessListComponent implements OnInit {
 
-  constructor() { }
+  Businesses: any;
 
-  ngOnInit() {
+  constructor(private businessService: BusinessService) { }
+
+  ngOnInit(): void {
+    this.businessService.getAllBusinesses().subscribe(
+      data=>{
+        this.Businesses=data;
+        console.log(data);
+      }, error => {
+        console.log('httperror:');
+        console.log(error);
+      }
+    );
   }
-
 }

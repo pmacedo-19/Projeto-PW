@@ -1,3 +1,5 @@
-<p>
-  business-list works!
-</p>
+<div class="row">
+  <div *ngFor="let business of Businesses" class="shadow-lg col-sm-4">
+    <app-business-card [business]="business"></app-business-card>
+  </div>
+</div>
