@@ -1,5 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { error } from 'console';
+//import { error } from 'console';
 import { BusinessService } from 'src/app/services/business.service';
 import { IBusiness } from '../IBusiness.interface';
 
@@ -12,17 +13,14 @@ export class BusinessListComponent implements OnInit {
 
   Businesses: any;
 
-  constructor(private businessService: BusinessService) { }
+  constructor(private http:HttpClient) { }
 
   ngOnInit(): void {
-    this.businessService.getAllBusinesses().subscribe(
+    this.http.get('data/businesses.json').subscribe(
       data=>{
         this.Businesses=data;
-        console.log(data);
-      }, error => {
-        console.log('httperror:');
-        console.log(error);
+        console.log(data)
       }
-    );
+    )
   }
 }
