@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
+import { Location } from '@angular/common'
 
 @Component({
   selector: 'app-business-review',
@@ -8,7 +10,7 @@ import { NgForm } from '@angular/forms';
 })
 export class BusinessReviewComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router, private location: Location) { }
 
   ngOnInit() {
   }
@@ -16,5 +18,10 @@ export class BusinessReviewComponent implements OnInit {
   onSubmit(Form : NgForm){
     console.log('Review Sunmited!');
     console.log(Form);
+  }
+
+  goBack(): void{
+    //this.router.navigate(['..']);
+    this.location.back();
   }
 }

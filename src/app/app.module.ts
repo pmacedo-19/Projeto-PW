@@ -13,6 +13,7 @@ import { AboutPageComponent } from './about-page/about-page.component';
 import { BusinessDetailComponent } from './business/Business-detail/Business-detail.component';
 import { BusinessReviewComponent } from './business/business-review/business-review.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { Location } from '@angular/common';
 
 const appRoutes: Routes = [
   {path: 'business', component: BusinessListComponent},

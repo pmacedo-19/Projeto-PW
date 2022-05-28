@@ -51,3 +51,9 @@
 .star-rating i ~ i ~ i ~ i ~ i {
   width: 100%;
 }
+
+
+.ng-invalid.ng-touched {
+  border-color: red;
+}
+

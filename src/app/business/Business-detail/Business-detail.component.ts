@@ -23,7 +23,7 @@ export class BusinessDetailComponent implements OnInit {
   }
 
   onOpenReview() {
-    this.router.navigateByUrl('/business-review')
+    this.router.navigate(['/business-review'])
   }
 
   //const filteredData = businessesList
