@@ -2,22 +2,29 @@
   {
     "Id":1,
     "Name":"Restaurant 1",
-    "Type":"Restaurant"
+    "Type":"Restaurant",
+    "Discription":"This is the discription of the Restaurant 1",
+    "Image":"buss-1"
   },
   {
     "Id":2,
     "Name":"Restaurant 2",
-    "Type":"Restaurant"
+    "Type":"Restaurant",
+    "Discription":"This is the discription of the Restaurant 2",
+    "Image":"buss-2"
   },
   {
     "Id":3,
     "Name":"Restaurant 3",
-    "Type":"Restaurant"
+    "Type":"Restaurant",
+    "Discription":"This is the discription of the Restaurant 3",
+    "Image":"buss-3"
   },
   {
     "Id":4,
     "Name":"Restaurant 4",
-    "Type":"Restaurant"
+    "Type":"Restaurant",
+    "Discription":"This is the discription of the Restaurant 4"
   }
 
 ]
