@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http'
 import {Routes, RouterModule} from '@angular/router'
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { BusinessCardComponent } from './business/business-card/business-card.component';
@@ -17,6 +18,7 @@ const appRoutes: Routes = [
   {path: 'business', component: BusinessListComponent},
   {path: 'about', component: AboutPageComponent},
   {path: 'business-details/:Id', component: BusinessDetailComponent},
+  {path: 'business-review', component: BusinessReviewComponent},
   {path: '**', component: PageNotFoundComponent}
 ]
 
@@ -34,6 +36,7 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     HttpClientModule,
+    FormsModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [
