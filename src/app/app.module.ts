@@ -9,10 +9,15 @@ import { BusinessListComponent } from './business/business-list/business-list.co
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { BusinessService } from './services/business.service';
 import { AboutPageComponent } from './about-page/about-page.component';
+import { BusinessDetailComponent } from './business/Business-detail/Business-detail.component';
+import { BusinessReviewComponent } from './business/business-review/business-review.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const appRoutes: Routes = [
-  {path: '', component: BusinessListComponent},
-  {path: 'about', component: AboutPageComponent}
+  {path: 'business', component: BusinessListComponent},
+  {path: 'about', component: AboutPageComponent},
+  {path: 'business-details/:Id', component: BusinessDetailComponent},
+  {path: '**', component: PageNotFoundComponent}
 ]
 
 @NgModule({
@@ -21,7 +26,10 @@ const appRoutes: Routes = [
     BusinessCardComponent,
     BusinessListComponent,
     NavBarComponent,
-    AboutPageComponent
+    AboutPageComponent,
+    BusinessDetailComponent,
+    BusinessReviewComponent,
+    PageNotFoundComponent
    ],
   imports: [
     BrowserModule,
